@@ -16,12 +16,16 @@ Interface React + TypeScript
    `-- Formulários locais (Checkpoint 1)
            |
            v
+      API Python + FastAPI
+             |
+             v
       PostgreSQL (DDL preparado)
 ```
 
 ## Camadas
 
 - **Apresentação:** componentes React em `src/App.tsx`.
+- **API:** endpoints iniciais em Python + FastAPI em `backend/main.py`.
 - **Estilos:** `src/App.css` e `src/index.css`, com comportamento responsivo.
 - **Dados de demonstração:** estado local do React, usado para validar navegação, geração de previsão e registro de venda.
 - **Persistência preparada:** tabelas, chaves estrangeiras, restrições e índices em `database/schema.sql`.
@@ -40,4 +44,4 @@ Interface React + TypeScript
 
 ## Próxima integração
 
-No Checkpoint 2, os estados locais devem ser substituídos por chamadas a uma API. A API deverá persistir os formulários nas tabelas `vendas` e `previsoes`, consultar o histórico e alimentar o cálculo da previsão.
+O backend inicial já expõe os endpoints do fluxo, mas ainda usa memória durante a demonstração. No Checkpoint 2, ele deverá persistir os formulários nas tabelas `vendas` e `previsoes`, consultar o PostgreSQL e substituir a estimativa demonstrativa por um modelo de previsão validado.

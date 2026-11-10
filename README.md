@@ -20,7 +20,10 @@ Aplicação web desenvolvida em React, TypeScript e Vite para acompanhar vendas 
 - React 19
 - TypeScript
 - Vite
+- Python
+- FastAPI
 - PostgreSQL (DDL inicial)
+- Bibliotecas Python para análise de dados e aprendizado de máquina
 - CSS
 
 ## Como executar o projeto
@@ -74,6 +77,23 @@ npm run preview
 npm run lint
 ```
 
+### Executar a API Python
+
+Em outro terminal, na raiz do projeto:
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r backend/requirements.txt
+uvicorn backend.main:app --reload --port 8000
+```
+
+A documentação interativa da API ficará disponível em:
+
+```text
+http://localhost:8000/docs
+```
+
 ## Estrutura principal
 
 ```text
@@ -82,6 +102,10 @@ src/
   App.css       # Estilos da interface
   index.css     # Estilos globais
   main.tsx      # Ponto de entrada do React
+
+backend/
+  main.py       # API FastAPI para vendas, importação e previsão
+  requirements.txt  # Dependências Python do backend
 
 database/
   schema.sql    # Tabelas, relacionamentos, índices e dados iniciais
@@ -105,6 +129,8 @@ A documentação dos relacionamentos e das regras de negócio está em [`docs/mo
 
 A arquitetura e os fluxos implementados estão em [`docs/arquitetura-solucao.md`](docs/arquitetura-solucao.md).
 
+As instruções da API estão em [`backend/README.md`](backend/README.md).
+
 ## Checkpoint 1
 
 Esta entrega contempla:
@@ -115,6 +141,7 @@ Esta entrega contempla:
 - Script DDL de criação e inserção de dados iniciais.
 - Documentação técnica em português.
 - Protótipo navegável com a jornada Login → Dashboard → Importação → Análise → Previsão → Resultado → Planejamento.
+- Backend inicial em Python + FastAPI, alinhado às tecnologias previstas para a AV2.
 
 > O repositório remoto da entrega está em [GitHub](https://github.com/silvan-ADS/Projeto-pr-tico-AV2---Desafios-do-banco-de-oportunidades-implementa-o-). A inclusão dos demais integrantes deve ser feita pelo proprietário nas configurações de acesso da equipe.
 
