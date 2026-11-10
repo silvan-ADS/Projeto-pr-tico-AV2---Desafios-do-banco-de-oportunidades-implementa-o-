@@ -29,11 +29,14 @@ Interface React + TypeScript
 
 ## Fluxos implementados nesta etapa
 
-1. A pessoa navega entre Painel, Previsões e Dados de vendas.
-2. O botão **Nova previsão** ou **Planejar próximos dias** abre o formulário de previsão.
-3. Ao gerar uma previsão, a aplicação confirma a ação e retorna para a tela de previsões.
-4. O botão **Registrar venda** abre um formulário.
-5. Ao salvar, a venda aparece no topo do histórico e uma confirmação é exibida.
+1. A pessoa entra pela tela de **Login** demonstrativa.
+2. No **Painel**, acompanha o estado da jornada.
+3. Em **Importação de dados**, carrega o histórico de vendas de exemplo em formato CSV.
+4. Em **Análise dos dados**, consulta os indicadores e a leitura do histórico.
+5. Em **Configuração/processamento**, inicia a geração da previsão.
+6. Em **Resultado da previsão**, visualiza os 590 pedidos estimados para os próximos 7 dias.
+7. Em **Apoio ao planejamento**, consulta recomendações de compras, produção, equipe e ações comerciais.
+8. Em **Dados de vendas**, registra novas vendas e atualiza o histórico da sessão.
 
 ## Próxima integração
 

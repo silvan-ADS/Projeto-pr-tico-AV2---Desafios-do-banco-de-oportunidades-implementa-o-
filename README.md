@@ -4,10 +4,14 @@ Aplicação web desenvolvida em React, TypeScript e Vite para acompanhar vendas 
 
 ## Funcionalidades
 
-- Painel com os principais indicadores da operação.
-- Tela de previsão de demanda para os próximos 7 dias.
-- Gráfico com histórico e estimativa de vendas.
-- Tela de dados de vendas.
+- Login demonstrativo para iniciar a jornada do usuário.
+- Painel com o acompanhamento das etapas do processo.
+- Importação demonstrativa do histórico de vendas em formato CSV.
+- Análise dos dados e indicadores do histórico.
+- Configuração e processamento da previsão de demanda.
+- Resultado da previsão para os próximos 7 dias.
+- Apoio ao planejamento com recomendações de compras, produção e equipe.
+- Tela de dados de vendas com registro de novos itens.
 - Modelagem lógica e script inicial do banco de dados PostgreSQL.
 - Layout responsivo para computador, tablet e celular.
 
@@ -110,5 +114,10 @@ Esta entrega contempla:
 - Modelagem lógica do banco de dados.
 - Script DDL de criação e inserção de dados iniciais.
 - Documentação técnica em português.
+- Protótipo navegável com a jornada Login → Dashboard → Importação → Análise → Previsão → Resultado → Planejamento.
 
-> Observação: a pasta contém o código e a documentação do repositório local. A criação do repositório remoto e a inclusão dos integrantes devem ser feitas no GitHub/GitLab da equipe, pois dependem das contas e permissões do grupo.
+> O repositório remoto da entrega está em [GitHub](https://github.com/silvan-ADS/Projeto-pr-tico-AV2---Desafios-do-banco-de-oportunidades-implementa-o-). A inclusão dos demais integrantes deve ser feita pelo proprietário nas configurações de acesso da equipe.
+
+## Limite desta entrega
+
+O Checkpoint 1 entrega o protótipo navegável, a modelagem lógica e o DDL inicial. A aplicação usa dados demonstrativos em memória para que o fluxo possa ser apresentado sem configurar um servidor. A API, a persistência real e o cálculo automatizado da previsão ficam planejados para o Checkpoint 2.
